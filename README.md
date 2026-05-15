@@ -2,6 +2,14 @@
 
 ## Descripción breve del proyecto
 Es una aplicación web en PHP para la gestión administrativa de una empresa.
+El proyecto se ejecuta en un servdor con las siguienes caracteriticas:
+- Servidor: MariaDB 10.11.14-MariaDB-0+deb12u2 - Debian 12
+- Versión del protocolo: 10
+- Conjunto de caracteres del servidor: UTF-8 Unicode (utf8mb4)
+- Apache/2.4.66 (Debian)
+- Versión del cliente de base de datos: libmysql - mysqlnd 8.2.30
+- Versión de PHP: 8.2.30
+- extensión PHP: mysqli
 
 - Usa index.php como enrutador principal y SERVER.php para la configuración global.
 - Tiene módulos para:
@@ -71,4 +79,6 @@ define('SECRET_IV', '010203');
 
 1. Copia `config/keys.php` si no existe
 2. Ajusta credenciales de base de datos y datos fiscales
-3. Abre el proyecto en el servidor web
+3. Inporta el archivo SQL para crear la base de datos en el servidor
+4. Abre el proyecto en el servidor web
+5. usa admin0 y Admin001 para ingresar
