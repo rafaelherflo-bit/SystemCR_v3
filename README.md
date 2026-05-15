@@ -46,7 +46,7 @@ Este proyecto separa las claves sensibles en `config/keys.php`.
 - `SECRET_KEY`
 - `SECRET_IV`
 
-### Ejemplo de archivo en config/keys.php
+## Ejemplo de archivo en config/keys.php
 --------------------------------------------------------------------------------------------
 <?php
 /**
