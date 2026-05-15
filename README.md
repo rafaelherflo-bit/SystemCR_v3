@@ -47,7 +47,7 @@ Este proyecto separa las claves sensibles en `config/keys.php`.
 - `SECRET_IV`
 
 ## Ejemplo de archivo en config/keys.php
---------------------------------------------------------------------------------------------
+
 <?php
 /**
  * Archivo: keys.php
@@ -70,7 +70,7 @@ define('PASS', 'MySQL_admin1_');
 
 define('SECRET_KEY', '$SYSTEMA@2024');
 define('SECRET_IV', '010203');
---------------------------------------------------------------------------------------------
+
 
 > No subas `config/keys.php` al repositorio.
 
