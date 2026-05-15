@@ -1,6 +1,27 @@
 # SystemCR
 
-Sistema web en PHP para la gestión administrativa de una empresa.
+## Descripción breve del proyecto
+Es una aplicación web en PHP para la gestión administrativa de una empresa.
+
+- Usa index.php como enrutador principal y SERVER.php para la configuración global.
+- Tiene módulos para:
+Clientes
+Contratos
+Cotizador
+Rentas
+Lecturas
+Cobranzas
+Equipos
+Toners
+Refacciones
+Proveedores
+Almacén
+Cambios
+Reportes
+Retiros
+Usuarios
+- Incluye endpoints AJAX en ajax y formatos de impresión/PDF en formats.
+- Está orientado a controlar inventarios, clientes, facturación, contratos y reportes operativos.
 
 ## Características
 
