@@ -1,0 +1,383 @@
+/* IMPORTAMOS UN FONDO GOOGLE Y DEFINIMOS EL ESTILO PRINCIPAL DEL BODY */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+body {
+  background-color: #9c9c9c; /* Color de fondo gris suave para la página */
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/*
+----------- INICIO ----------- Estilos para el Login ----------- INICIO -----------
+*/
+.divLogin {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura completa de la vista */
+  margin: 0;
+}
+
+.formLogin {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para el formulario */
+  width: 100%;
+  max-width: 350px; /* Limita el ancho máximo del formulario */
+  display: flex;
+  flex-direction: column;
+}
+
+.labelLogin {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase; /* Para que la etiqueta resalte */
+}
+
+.inputLogin {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+/*
+------------- FIN ------------ Estilos para el Login ------------- FIN ------------
+*/
+
+/*
+----------- INICIO ----------- ESTILO PRINCIPALES ----------- INICIO -----------
+*/
+/* --- 1. Estilos para el Contenedor Principal --- */
+.divContainer {
+  /* Utiliza Flexbox para centrar todo el contenido (h1, h3, table) */
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente dentro del contenedor */
+
+  /* Configuración de Ancho y Márgenes */
+  width: 95%; /* Asegura que no ocupe el 100% para mejor visualización */
+  max-width: 1200px; /* Limita el ancho máximo en pantallas grandes */
+  margin: 20px auto; /* Centra el contenedor completo en el cuerpo de la página */
+  padding: 20px;
+  background-color: #ffffff; /* Fondo blanco para el contenedor */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+
+/* ESTILOS PARA TITULOS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+}
+
+/*
+----- INICIO -------
+ESTILOS PARA BOTONES
+*/
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Transición suave para el efecto hover */
+  white-space: nowrap; /* Obligar a una sola linea */
+}
+/* Estilos para botones SUCCESS */
+.btnSuccess {
+  color: #28a745;
+  border: 1px solid #28a745;
+}
+.btnSuccess:hover {
+  background-color: #28a745;
+  color: white;
+}
+/* Estilos para botones DANGER */
+.btnDanger {
+  color: #a72828;
+  border: 1px solid #a72828;
+}
+.btnDanger:hover {
+  background-color: #a72828;
+  color: white;
+}
+/* Estilos para botones WARNING */
+.btnWarning {
+  color: #a5a728;
+  border: 1px solid #a5a728;
+}
+.btnWarning:hover {
+  background-color: #a5a728;
+  color: white;
+}
+/* Estilos para botones INFO */
+.btnInfo {
+  color: #2889a7;
+  border: 1px solid #2889a7;
+}
+.btnInfo:hover {
+  background-color: #2889a7;
+  color: white;
+}
+/* Estilos para botones PRIMARY */
+.btnPrimary {
+  color: #2850a7;
+  border: 1px solid #2850a7;
+}
+.btnPrimary:hover {
+  background-color: #2850a7;
+  color: white;
+}
+/* Estilos para botones SECONDARY */
+.btnSecondary {
+  color: #8a8a8a;
+  border: 1px solid #8a8a8a;
+}
+.btnSecondary:hover {
+  background-color: #8a8a8a;
+  color: white;
+}
+/*
+ESTILOS PARA BOTONES
+------- FIN -------
+*/
+
+/* Variables CSS para facilitar cambios de color */
+:root {
+  --primary-color: #007bff; /* Azul vibrante */
+  --secondary-color: #38393a; /* Gris para textos secundarios */
+  --tertiary-color: #343a40; /* Gris para textos Terciarios */
+  --background-light: #f8f9fa; /* Fondo claro */
+  --border-color: #ced4da;
+  --focus-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+
+/*
+-------- INICIO -------
+ESTILOS PARA LAS TABLAS
+*/
+.tableStyle table {
+  width: 100%; /* La tabla ocupa todo el ancho del divContainer */
+  table-layout: auto; /* Permite que las columnas se ajusten automáticamente */
+  font-size: 0.9em;
+  border-collapse: collapse !important; /* Fusiona los bordes de las celdas */
+  border-spacing: 0 !important; /* Remueve el espacio entre el contenido y los bordes */
+}
+
+/* Estilos para el Encabezado (Thead) */
+.tableStyle thead tr {
+  background-color: var(--tertiary-color); /* Fondo oscuro para el encabezado */
+  color: white;
+}
+
+.tableStyle th {
+  padding: 12px 8px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+
+/* Estilos para el Cuerpo de la Tabla (Tbody) y Celdas */
+.tableStyle td {
+  padding: 15px 8px;
+  text-align: center;
+  border: 0.5px solid var(--secondary-color);
+  vertical-align: middle;
+}
+
+.tableStyle tbody tr:hover {
+  background-color: #e9ecef; /* Resaltar la fila al pasar el mouse */
+}
+
+/*
+ESTILOS PARA LAS TABLAS
+----------- FIN -------
+*/
+
+/*
+--------- INICIO -------
+ESTILOS PARA FORMULARIOS
+*/
+/* Contenedor principal del formulario */
+.form-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los grupos de campos */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* --- Título del Formulario --- */
+
+/* -------------------------------------
+ESTILO DE TITULO
+------------------------------------- */
+.formTitle {
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--primary-color);
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 600;
+  /* Línea sutil debajo del título */
+  padding-bottom: 10px;
+}
+
+/* -------------------------------------
+ESTILO DE REJILLA RESPONSIVA (GRID)
+------------------------------------- */
+
+.form-grid {
+  display: grid;
+  /* Por defecto, dos columnas de igual tamaño */
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Espacio entre los elementos de la rejilla */
+}
+
+/* Clase para que un elemento ocupe todo el ancho en la rejilla */
+.full-width {
+  grid-column: 1 / -1; /* Ocupa desde la primera hasta la última línea de columna */
+}
+
+/* Media Query para hacer el formulario responsivo */
+@media (max-width: 768px) {
+  .form-grid {
+    /* En pantallas pequeñas, pasa a ser una sola columna */
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -------------------------------------
+/* ESTILO DE ETIQUETAS E INPUTS
+------------------------------------- */
+
+.form-label {
+  display: block; /* La etiqueta ocupa su propia línea */
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+
+/* Estilo general para todos los inputs y selects */
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+  background-color: var(--background-light);
+}
+
+.form-input:focus,
+.form-select:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: var(--focus-shadow);
+  background-color: white;
+}
+
+/* Estilo específico para el select (si es necesario) */
+.form-select {
+  /* Elimina el aspecto nativo en algunos navegadores para unificar el estilo */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Puedes agregar un ícono de flecha personalizado con background-image */
+}
+
+/*
+--- Estilos del Navbar ---
+*/
+.navbar {
+  /* Fija la barra en la parte superior */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+
+  /* Estilos de apariencia */
+  background-color: var(--tertiary-color);
+  color: white;
+  box-shadow: 0 2px 4px rgba(202, 59, 59, 0.1);
+
+  /* Propiedades de Flexbox para alinear elementos */
+  display: flex;
+  justify-content: space-between; /* Espacio entre el logo y los enlaces */
+  align-items: center; /* Centrado vertical */
+  padding: 10px 20px;
+  height: 40px; /* Altura para el ejemplo */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Estilo para el Logo */
+.navbar__logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Estilo para el contenedor de enlaces */
+.navbar__links {
+  display: flex; /* Utiliza flexbox para los enlaces */
+  gap: 20px; /* Espacio entre cada enlace */
+}
+
+/* Estilo para cada enlace individual */
+.navbar__links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+  transition: background-color 0.3s;
+}
+
+.navbar__links a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+/* --- Media Query para Responsividad (Móviles) --- */
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column; /* Apila el logo y los enlaces */
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .navbar__logo {
+    margin-bottom: 10px; /* Espacio debajo del logo */
+  }
+
+  .navbar__links {
+    /* Los enlaces ocupan todo el ancho disponible */
+    width: 100%;
+    justify-content: space-around; /* Distribuye los enlaces horizontalmente */
+    padding-bottom: 5px;
+  }
+
+  .navbar__links a {
+    font-size: 0.9em;
+    padding: 5px 8px;
+  }
+}

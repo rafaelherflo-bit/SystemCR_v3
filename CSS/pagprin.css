@@ -1,0 +1,140 @@
+/* munu de la pagina principal*/
+
+#menu {
+    background: #1930C4;
+    height: 77px;
+    padding: 0 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu ul, #menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu ul {
+    display: flex;
+    align-items: center;
+}
+
+#menu li {
+    display: inline-block;
+    position: relative;
+}
+
+#menu a {
+    display: block;
+    line-height: 77px;
+    padding: 0 14px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+#menu a:hover {
+    background: #F2F2F2;
+    color: #1930C4;
+}
+
+#menu .right-items {
+    margin-right: 25px; /
+}
+
+#menu input,
+#menu label {
+    display: none;
+}
+
+/* SUBMENUS */
+#menu ul.sub-menus {
+    background: #149AE0;
+    position: absolute;
+    width: 170px;
+    display: none;
+}
+
+#menu ul.sub-menus li {
+    width: 100%;
+}
+
+#menu li:hover ul.sub-menus {
+    display: block;
+}
+
+/* RESPONSIVE */
+@media(max-width: 800px) {
+    #menu {
+        display: block;
+    }
+
+    .right-items {
+        margin-right: 0;
+    }
+
+    #menu label {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 15px;
+        font-size: 30px;
+        color: white;
+        line-height: 77px;
+    }
+
+    #menu label:before {
+        content: "≡";
+    }
+
+    #menu input {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 77px;
+        opacity: 0;
+        z-index: 3;
+    }
+
+    #menu ul {
+        display: none;
+        flex-direction: column;
+        background: #149AE0;
+        width: 100%;
+        position: absolute;
+        top: 77px;
+        left: 0;
+    }
+
+    #menu input:checked ~ ul {
+        display: flex;
+    }
+
+    #menu ul.sub-menus {
+        position: static;
+        width: 100%;
+    }
+
+    #menu ul.sub-menus a {
+        padding-left: 30px;
+    }
+}
+
+/* titulo */
+
+.tit {
+  font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: -350px;
+    align-items: flex-start;
+
+}
+
