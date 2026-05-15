@@ -1283,6 +1283,13 @@ CREATE TABLE `Usuarios` (
   `usuario_navbarStatus` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Volcado de datos para la tabla `Usuarios`
+--
+
+INSERT INTO `Usuarios` (`usuario_id`, `usuario_nombre`, `usuario_apellido`, `usuario_telefono`, `usuario_direccion`, `usuario_email`, `usuario_usuario`, `usuario_clave`, `usuario_estado`, `usuario_privilegio`, `usuario_navbarStatus`) VALUES
+(1, 'Administrador', 'Principal', '9987614185', 'Dir', 'arhf.cr.imprime.tus.ideas@gmail.com', 'admin0', 'QS9WQnBZMlN3Vmhhekx1ZkM2Y2QvUT09', 'Activo', 1, 0);
+
 -- --------------------------------------------------------
 
 --
